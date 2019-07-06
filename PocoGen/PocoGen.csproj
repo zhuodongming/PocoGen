@@ -1,7 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>zdm</Authors>
+    <Description>PocoGen supporting Sql Server, MySQL, PostgreSQL, Oracle, SqlCE.</Description>
+    <PackageId>zdm.PocoGen</PackageId>
+    <PackageProjectUrl>https://github.com/zhuodongming/PocoGen</PackageProjectUrl>
+    <PackageTags>poco, generator, SqlServer, MySQL, PostgreSQL, Oracle, SqlCE.</PackageTags>
   </PropertyGroup>
 
 </Project>
