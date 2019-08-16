@@ -32,6 +32,11 @@ namespace PocoGen
         public bool IsGenNPoco { get; set; }
 
         /// <summary>
+        /// 是否生成NPoco
+        /// </summary>
+        public bool IsGenPetaPoco { get; set; }
+
+        /// <summary>
         /// 排除的前缀表
         /// </summary>
         public string[] ExcludePrefix { get; set; }

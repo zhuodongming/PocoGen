@@ -65,11 +65,15 @@ namespace PocoGen
             }
 
             var sb = new StringBuilder(100 * 1024);
-            sb.AppendLine("using System;");
+            if (options.IsGenPetaPoco)
+            {
+                sb.AppendLine("using PetaPoco;");
+            }
             if (options.IsGenNPoco)
             {
                 sb.AppendLine("using NPoco;");
             }
+            sb.AppendLine("using System;");
             sb.AppendLine();
             sb.AppendLine($"namespace {options.Namespace}");
             sb.AppendLine("{");
@@ -81,7 +85,7 @@ namespace PocoGen
         string GenerateClass(Table table)
         {
             var builder = new StringBuilder(200);
-            if (options.IsGenNPoco)
+            if (options.IsGenNPoco || options.IsGenPetaPoco)
             {
                 builder.AppendLine($"    [TableName(\"{table.Name}\")]");
                 var pks = table.PK;

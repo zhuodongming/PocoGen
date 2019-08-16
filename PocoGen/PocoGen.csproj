@@ -7,6 +7,7 @@
     <PackageId>zdm.PocoGen</PackageId>
     <PackageProjectUrl>https://github.com/zhuodongming/PocoGen</PackageProjectUrl>
     <PackageTags>poco, generator, SqlServer, MySQL, PostgreSQL, Oracle, SqlCE.</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
